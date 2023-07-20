@@ -1,4 +1,4 @@
-module github.com/mholt/archiver/v3
+module github.com/dominik-przybyl-wttech/archiver/v3
 
 go 1.13
 
