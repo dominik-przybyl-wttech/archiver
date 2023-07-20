@@ -275,7 +275,7 @@ func (z *Zip) extractFile(f File, to string, header *zip.FileHeader) error {
 
 	// if a directory, no content; simply make the directory and return
 	if f.IsDir() {
-		return mkdir(to, f.Mode())
+		return mkdir(to, 0755)
 	}
 
 	// do not overwrite existing files, if configured
