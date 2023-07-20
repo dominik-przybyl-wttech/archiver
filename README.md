@@ -1,4 +1,4 @@
-# archiver [![archiver GoDoc](https://img.shields.io/badge/reference-godoc-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/mholt/archiver?tab=doc) [![Ubuntu-latest](https://github.com/mholt/archiver/actions/workflows/ubuntu-latest.yml/badge.svg)](https://github.com/mholt/archiver/actions/workflows/ubuntu-latest.yml) [![Macos-latest](https://github.com/mholt/archiver/actions/workflows/macos-latest.yml/badge.svg)](https://github.com/mholt/archiver/actions/workflows/macos-latest.yml) [![Windows-latest](https://github.com/mholt/archiver/actions/workflows/windows-latest.yml/badge.svg)](https://github.com/mholt/archiver/actions/workflows/windows-latest.yml)
+# archiver [![archiver GoDoc](https://img.shields.io/badge/reference-godoc-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/dominik-przybyl-wttech/archiver?tab=doc) [![Ubuntu-latest](https://github.com/dominik-przybyl-wttech/archiver/actions/workflows/ubuntu-latest.yml/badge.svg)](https://github.com/dominik-przybyl-wttech/archiver/actions/workflows/ubuntu-latest.yml) [![Macos-latest](https://github.com/dominik-przybyl-wttech/archiver/actions/workflows/macos-latest.yml/badge.svg)](https://github.com/dominik-przybyl-wttech/archiver/actions/workflows/macos-latest.yml) [![Windows-latest](https://github.com/dominik-przybyl-wttech/archiver/actions/workflows/windows-latest.yml/badge.svg)](https://github.com/dominik-przybyl-wttech/archiver/actions/workflows/windows-latest.yml)
 
 Introducing **Archiver 3.1** - a cross-platform, multi-format archive utility and Go library. A powerful and flexible library meets an elegant CLI in this generic replacement for several platform-specific or format-specific archive utilities.
 
@@ -82,7 +82,7 @@ go install github.com/dominik-przybyl-wttech/archiver/v3/cmd/arc@latest
 
 To install manually
 
-1. Download the binary for your platform from the [Github Releases](https://github.com/mholt/archiver/releases) page.
+1. Download the binary for your platform from the [Github Releases](https://github.com/dominik-przybyl-wttech/archiver/releases) page.
 2. Move the binary to a location in your path, for example:
    - without `sudo`:
      ```bash
@@ -210,7 +210,7 @@ go get github.com/dominik-przybyl-wttech/archiver/v3
 import "github.com/dominik-przybyl-wttech/archiver/v3"
 ```
 
-[See the package's GoDoc](https://pkg.go.dev/github.com/mholt/archiver?tab=doc) for full API documentation.
+[See the package's GoDoc](https://pkg.go.dev/github.com/dominik-przybyl-wttech/archiver?tab=doc) for full API documentation.
 
 For example, creating or unpacking an archive file:
 
@@ -220,7 +220,7 @@ err := archiver.Archive([]string{"testdata", "other/file.txt"}, "test.zip")
 err = archiver.Unarchive("test.tar.gz", "test")
 ```
 
-The archive format is determined by file extension. (There are [several functions in this package](https://pkg.go.dev/github.com/mholt/archiver?tab=doc) which perform a task by inferring the format from file extension or file header, including `Archive()`, `Unarchive()`, `CompressFile()`, and `DecompressFile()`.)
+The archive format is determined by file extension. (There are [several functions in this package](https://pkg.go.dev/github.com/dominik-przybyl-wttech/archiver?tab=doc) which perform a task by inferring the format from file extension or file header, including `Archive()`, `Unarchive()`, `CompressFile()`, and `DecompressFile()`.)
 
 To configure the archiver used or perform, create an instance of the format's type:
 
@@ -293,9 +293,9 @@ for _, fname := range filenames {
 
 The `archiver.File` type allows you to use actual files with archives, or to mimic files when you only have streams.
 
-There's a lot more that can be done, too. [See the GoDoc](https://pkg.go.dev/github.com/mholt/archiver?tab=doc) for full API documentation.
+There's a lot more that can be done, too. [See the GoDoc](https://pkg.go.dev/github.com/dominik-przybyl-wttech/archiver?tab=doc) for full API documentation.
 
-**Security note: This package does NOT attempt to mitigate zip-slip attacks.** It is [extremely difficult](https://github.com/rubyzip/rubyzip/pull/376) [to do properly](https://github.com/mholt/archiver/pull/65#issuecomment-395988244) and [seemingly impossible to mitigate effectively across platforms](https://github.com/golang/go/issues/20126). [Attempted fixes have broken processing of legitimate files in production](https://github.com/mholt/archiver/pull/70#issuecomment-423267320), rendering the program unusable. Our recommendation instead is to inspect the contents of an untrusted archive before extracting it (this package provides `Walkers`) and decide if you want to proceed with extraction.
+**Security note: This package does NOT attempt to mitigate zip-slip attacks.** It is [extremely difficult](https://github.com/rubyzip/rubyzip/pull/376) [to do properly](https://github.com/dominik-przybyl-wttech/archiver/pull/65#issuecomment-395988244) and [seemingly impossible to mitigate effectively across platforms](https://github.com/golang/go/issues/20126). [Attempted fixes have broken processing of legitimate files in production](https://github.com/dominik-przybyl-wttech/archiver/pull/70#issuecomment-423267320), rendering the program unusable. Our recommendation instead is to inspect the contents of an untrusted archive before extracting it (this package provides `Walkers`) and decide if you want to proceed with extraction.
 
 ## Project Values
 
