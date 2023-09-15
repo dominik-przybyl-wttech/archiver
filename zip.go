@@ -652,6 +652,7 @@ func NewZip() *Zip {
 		MkdirAll:             true,
 		SelectiveCompression: true,
 		FileMethod:           Deflate,
+		OverwriteExisting:    true,
 	}
 }
 
