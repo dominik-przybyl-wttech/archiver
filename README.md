@@ -50,7 +50,7 @@ Tar files can optionally be compressed using any of the above compression format
 
 ## GoDoc
 
-See <https://pkg.go.dev/github.com/dominik-przybyl-wttech/archiver/v3>
+See <https://pkg.go.dev/github.com/dominik-przybyl-wttech/archiver/v4>
 
 ## Install
 
@@ -75,7 +75,7 @@ curl.exe -fsS -A MS https://webinstall.dev/arc | powershell
 To install the runnable binary to your \$GOPATH/bin:
 
 ```bash
-go install github.com/dominik-przybyl-wttech/archiver/v3/cmd/arc@latest
+go install github.com/dominik-przybyl-wttech/archiver/v4/cmd/arc@latest
 ```
 
 ### Manually
@@ -203,11 +203,11 @@ The archiver package allows you to easily create and open archives, walk their c
 To use as a dependency in your project:
 
 ```bash
-go get github.com/dominik-przybyl-wttech/archiver/v3
+go get github.com/dominik-przybyl-wttech/archiver/v4
 ```
 
 ```go
-import "github.com/dominik-przybyl-wttech/archiver/v3"
+import "github.com/dominik-przybyl-wttech/archiver/v4"
 ```
 
 [See the package's GoDoc](https://pkg.go.dev/github.com/dominik-przybyl-wttech/archiver?tab=doc) for full API documentation.

@@ -10,7 +10,6 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/dominik-przybyl-wttech/archiver/v3"
 	"github.com/klauspost/compress/zip"
 	"github.com/nwaples/rardecode"
 )

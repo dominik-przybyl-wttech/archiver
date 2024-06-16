@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"os"
 	"testing"
-
-	"github.com/dominik-przybyl-wttech/archiver/v3"
 )
 
 func TestIllegalPathErrorString(t *testing.T) {

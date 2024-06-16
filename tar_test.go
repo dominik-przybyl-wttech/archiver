@@ -5,8 +5,6 @@ import (
 	"os"
 	"path"
 	"testing"
-
-	"github.com/dominik-przybyl-wttech/archiver/v3"
 )
 
 func requireRegularFile(t *testing.T, path string) os.FileInfo {
